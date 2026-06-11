@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Strand Group – Verdiskapende samspill</title>
+<meta name="description" content="Strand Group AS investerer i og utvikler selskaper innen bygg, industri, eiendom og IT. Over 70 ansatte og 309 millioner i omsetning i 2024.">
+<link rel="canonical" href="https://strandgroup.no/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Strand Group">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:title" content="Strand Group – Verdiskapende samspill">
+<meta property="og:description" content="Strand Group AS investerer i og utvikler selskaper innen bygg, industri, eiendom og IT.">
+<meta property="og:url" content="https://strandgroup.no/">
+<meta property="og:image" content="https://clientrelay.no/test/strand/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Strand Group AS",
+  "url": "https://strandgroup.no/",
+  "logo": "https://strandgroup.no/wp-content/uploads/2021/08/Strand-Group-logo.png",
+  "email": "post@strandgroup.no",
+  "telephone": "+47 334 50 500",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Breiliveien 49",
+    "postalCode": "3217",
+    "addressLocality": "Sandefjord",
+    "addressCountry": "NO"
+  }
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14181d;
+    --ink-soft: #3d444d;
+    --paper: #ffffff;
+    --grey: #f4f5f7;
+    --red: #e02b2b;
+    --line: #e3e6ea;
+    --sage: #cfd6cd;
+    --sage-light: #e9ede8;
+    --forest: #41573c;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; }
+  a { text-decoration: none; color: inherit; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+
+  /* Header */
+  header { position: sticky; top: 0; background: rgba(255,255,255,.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); z-index: 10; }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+  .logo { display: flex; align-items: center; }
+  .logo img { height: 44px; width: auto; display: block; }
+  nav ul { display: flex; gap: 36px; list-style: none; font-family: 'Julius Sans One', 'Segoe UI', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
+  nav a:hover { color: var(--red); }
+  .menu-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 6px; }
+  .menu-toggle span { display: block; width: 24px; height: 2px; background: var(--ink); margin: 5px 0; }
+  .btn { display: inline-block; background: var(--red); color: #fff; padding: 12px 26px; border-radius: 4px; font-size: 13px; font-weight: 700; letter-spacing: 1px; }
+  .btn:hover { background: #c11f1f; }
+  .btn.ghost { background: transparent; color: var(--ink); border: 2px solid var(--ink); }
+  .btn.ghost:hover { border-color: var(--red); color: var(--red); }
+
+  /* Hero */
+  .hero { background: var(--sage-light); color: var(--ink); padding: 120px 0 100px; position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(20,24,29,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(20,24,29,.05) 1px, transparent 1px);
+    background-size: 56px 56px; }
+  .hero .shape { position: absolute; will-change: transform; }
+  .shape.s1 { width: 420px; height: 420px; border: 2px solid rgba(20,24,29,.14); top: -90px; right: 8%; transform: rotate(12deg); animation: float1 14s ease-in-out infinite alternate; }
+  .shape.s2 { width: 260px; height: 260px; background: var(--forest); opacity: .10; top: 38%; right: 22%; transform: rotate(-8deg); animation: float2 18s ease-in-out infinite alternate; }
+  .shape.s3 { width: 120px; height: 120px; background: var(--forest); opacity: .9; top: 24%; right: 14%; animation: float3 12s ease-in-out infinite alternate; }
+  @keyframes float1 { to { transform: rotate(18deg) translateY(34px); } }
+  @keyframes float2 { to { transform: rotate(-2deg) translate(-30px, -24px); } }
+  @keyframes float3 { to { transform: translate(-20px, 40px) rotate(8deg); } }
+  @media (max-width: 860px) { .hero .shape { display: none; } }
+  .hero .wrap { position: relative; z-index: 1; }
+  .hero .kicker { color: var(--red); font-weight: 700; letter-spacing: 3px; font-size: 13px; text-transform: uppercase; }
+  .hero h1 { font-size: clamp(36px, 5vw, 60px); line-height: 1.1; margin: 18px 0 22px; max-width: 700px; }
+  .hero p { max-width: 560px; color: var(--ink-soft); font-size: 18px; margin-bottom: 36px; }
+  .hero .actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-contact { display: flex; gap: 32px; flex-wrap: wrap; margin-top: 28px; font-size: 15px; font-weight: 600; }
+  .hero-contact a { display: flex; align-items: center; gap: 10px; color: var(--ink); }
+  .hero-contact a:hover { color: var(--red); }
+  .hero-contact svg { width: 18px; height: 18px; fill: var(--red); flex-shrink: 0; }
+
+  /* Stats band */
+  .stats { background: var(--sage); border-bottom: 1px solid var(--line); }
+  .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 38px 32px; }
+  .stat b { display: block; font-size: 32px; font-weight: 800; color: var(--ink); }
+  .stat span { font-size: 13px; color: var(--ink-soft); letter-spacing: 1px; text-transform: uppercase; }
+
+  /* Sections */
+  section { padding: 90px 0; }
+  .kicker { color: var(--red); font-weight: 700; letter-spacing: 3px; font-size: 13px; text-transform: uppercase; }
+  h2 { font-size: 34px; margin: 12px 0 18px; }
+  .lead { max-width: 640px; color: var(--ink-soft); font-size: 17px; }
+
+  /* Sectors */
+  .sectors { background: var(--grey); }
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+  .card { background: transparent; transition: .2s; }
+  .card .photo { height: 230px; background-size: cover; background-position: center; background-color: var(--sage); }
+  .card .panel { background: #fff; width: 88%; margin-top: -72px; position: relative; padding: 26px 24px 24px; box-shadow: 0 2px 10px rgba(20,24,29,.06); transition: .2s; }
+  .card:hover .panel { box-shadow: 0 14px 30px rgba(20,24,29,.14); transform: translateY(-4px); }
+  .card h3 { font-size: 24px; font-weight: 600; color: var(--forest); margin-bottom: 10px; }
+  .card p { font-size: 14px; color: var(--ink-soft); }
+  .card a { color: var(--ink); font-size: 13px; font-weight: 700; display: inline-block; margin-top: 14px; border-bottom: 2px solid var(--red); }
+
+  /* Numbers table */
+  table { width: 100%; border-collapse: collapse; margin-top: 40px; font-size: 15px; }
+  th, td { text-align: right; padding: 16px 14px; border-bottom: 1px solid var(--line); }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--ink-soft); border-bottom: 2px solid var(--ink); }
+  tbody tr:hover { background: var(--grey); }
+  td.hl { font-weight: 700; }
+
+  /* Recruit CTA */
+  .recruit { background: var(--forest); color: #fff; text-align: center; }
+  .recruit .lead { margin: 0 auto 34px; color: #cfd9cc; }
+  .recruit .kicker { color: var(--sage); }
+
+  /* Footer */
+  footer { background: #0d1014; color: #9aa3ad; padding: 56px 0 32px; font-size: 14px; }
+  .fgrid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+  footer h4 { color: #fff; font-size: 14px; letter-spacing: 1px; margin-bottom: 14px; }
+  footer li { list-style: none; margin-bottom: 8px; }
+  .legal { border-top: 1px solid #232a33; padding-top: 24px; font-size: 12px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+  @media (max-width: 860px) {
+    .menu-toggle { display: block; }
+    header nav { position: absolute; top: 76px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--line); display: none; box-shadow: 0 12px 24px rgba(20,24,29,.08); }
+    header nav.open { display: block; }
+    header nav ul { flex-direction: column; gap: 0; padding: 8px 32px 16px; }
+    header nav li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    header nav li:last-child { border-bottom: 0; }
+    .stats .wrap, .cards, .fgrid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 520px) {
+    .stats .wrap, .cards, .fgrid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><img src="Strand-Group-logo.png" alt="Strand Group"></a>
+    <button class="menu-toggle" onclick="document.querySelector('header nav').classList.toggle('open')" aria-label="Meny"><span></span><span></span><span></span></button>
+    <nav>
+      <ul>
+        <li><a href="om-oss.html">Om oss</a></li>
+        <li><a href="#sektorer">Våre selskaper</a></li>
+        <li><a href="#tall">Nøkkeltall</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="shape s1"></div>
+  <div class="shape s2"></div>
+  <div class="shape s3"></div>
+  <div class="wrap">
+    <div class="kicker">Entreprenørkonsern i vekst</div>
+    <h1>Verdiskapende samspill</h1>
+    <p>Strand Group investerer i – og bygger opp – selskaper vi tror på. Gjennom aktivt, ansvarlig eierskap tilfører vi kompetanse, erfaring og kapital.</p>
+    <div class="actions">
+      <a href="#sektorer" class="btn ghost">SE VÅRE SELSKAPER</a>
+      <a href="#kontakt" class="btn ghost">KONTAKT OSS</a>
+    </div>
+    <div class="hero-contact">
+      <a href="mailto:post@strandgroup.no"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 5-8-5V6.5l8 5 8-5v1.74z"/></svg>post@strandgroup.no</a>
+      <a href="tel:+4733450500"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>(+47) 334 50 500</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>211 MNOK</b><span>Omsetning 2023</span></div>
+    <div class="stat"><b>34 MNOK</b><span>Driftsresultat</span></div>
+    <div class="stat"><b>70</b><span>Ansatte</span></div>
+    <div class="stat"><b>4</b><span>Bransjer</span></div>
+  </div>
+</div>
+
+<section class="sectors" id="sektorer">
+  <div class="wrap">
+    <div class="kicker">Våre selskaper</div>
+    <h2>Fire bransjer. Ett eierskap.</h2>
+    <p class="lead">Strand Group er direkte eller indirekte største eier i en rekke selskaper innen bygg, industri, eiendom og IT.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="photo" style="background-image:url('bygg.jpg')"></div>
+        <div class="panel">
+          <h3>Bygg</h3>
+          <p>Entreprenørvirksomhet for private og offentlige kunder i Sør-Norge.</p>
+          <a href="bygg.html">Les mer →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="photo" style="background-image:url('industri.png')"></div>
+        <div class="panel">
+          <h3>Industri</h3>
+          <p>Produksjon og industrielle tjenester med fokus på kvalitet og effektivitet.</p>
+          <a href="industri.html">Les mer →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="photo" style="background-image:url('eiendom.jpg')"></div>
+        <div class="panel">
+          <h3>Eiendom</h3>
+          <p>Utvikling og forvaltning av nærings- og boligeiendom.</p>
+          <a href="eiendom.html">Les mer →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="photo" style="background-image:url('it.jpg')"></div>
+        <div class="panel">
+          <h3>IT</h3>
+          <p>Investeringer i teknologiselskaper og digitale løsninger.</p>
+          <a href="it.html">Les mer →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tall">
+  <div class="wrap">
+    <div class="kicker">Nøkkeltall</div>
+    <h2>Solid finansiell plattform</h2>
+    <p class="lead">God resultatutvikling gjør oss godt rustet for videre vekst og verdiskapning. (Akkumulerte, ikke-konsoliderte tall.)</p>
+    <table>
+      <thead>
+        <tr><th>NOK</th><th>2024</th><th>2023</th><th>2022</th><th>2021</th><th>2020</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Inntekter</td><td class="hl">309 323 000</td><td>211 807 000</td><td>212 486 000</td><td>133 951 000</td><td>86 044 000</td></tr>
+        <tr><td>EBITDA</td><td class="hl">28 749 000</td><td>36 602 000</td><td>30 952 000</td><td>20 918 000</td><td>16 762 000</td></tr>
+        <tr><td>Driftsresultat</td><td class="hl">25 111 000</td><td>34 015 000</td><td>28 627 000</td><td>19 295 000</td><td>15 473 000</td></tr>
+        <tr><td>Resultat før skatt</td><td class="hl">23 833 000</td><td>33 193 000</td><td>27 945 000</td><td>18 798 000</td><td>15 002 000</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="recruit" id="jobb">
+  <div class="wrap">
+    <div class="kicker">Bli med på laget</div>
+    <h2>Vi ser etter flere dyktige folk</h2>
+    <p class="lead">Tømrere, betongarbeidere og fagfolk som vil vokse sammen med oss. Fast ansettelse, god lønn og spennende prosjekter.</p>
+    <a href="#" class="btn">SE LEDIGE STILLINGER</a>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>STRAND GROUP AS</h4>
+        <p>Verdiskapende samspill gjennom aktivt og ansvarlig eierskap.</p>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>post@strandgroup.no</li>
+          <li>+47 334 50 500</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Snarveier</h4>
+        <ul>
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a href="#jobb">Ledige stillinger</a></li>
+          <li><a href="#">Personvern</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Strand Group AS</span>
+      <span>Personvern · Informasjonskapsler</span>
+    </div>
+  </div>
+</footer>
+
+<script
+  src="https://clientrelay.tech/widget/chatbot.js?v=1.5.576"
+  data-client="strand"
+  data-name="AI Assistent"
+  data-color="#007bc0"
+  data-greeting="Hei der! Hva kan jeg hjelpe deg med i dag?"
+  data-nudge="Hei! Jeg kan svare på spørsmål!"
+  data-nudge-delay="3000"
+></script>
+</body>
+</html>

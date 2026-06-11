@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Industri – Strand Group</title>
+<meta name="description" content="Strand Group eier Troll Vindufabrikk AS, som har levert kvalitetsvinduer direkte fra fabrikk i over 30 år.">
+<link rel="canonical" href="https://strandgroup.no/industri/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Strand Group">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:title" content="Industri – Strand Group">
+<meta property="og:description" content="Strand Group eier Troll Vindufabrikk AS – kvalitetsvinduer direkte fra fabrikk i over 30 år.">
+<meta property="og:url" content="https://strandgroup.no/industri/">
+<meta property="og:image" content="https://clientrelay.no/test/strand/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14181d; --ink-soft: #3d444d; --paper: #ffffff; --grey: #f4f5f7;
+    --red: #e02b2b; --line: #e3e6ea; --sage: #cfd6cd; --sage-light: #e9ede8; --forest: #41573c;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; }
+  a { text-decoration: none; color: inherit; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+  header { position: sticky; top: 0; background: rgba(255,255,255,.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); z-index: 10; }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+  .logo { display: flex; align-items: center; }
+  .logo img { height: 44px; width: auto; display: block; }
+  nav ul { display: flex; gap: 36px; list-style: none; font-family: 'Julius Sans One', 'Segoe UI', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
+  nav a:hover { color: var(--red); }
+  .menu-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 6px; }
+  .menu-toggle span { display: block; width: 24px; height: 2px; background: var(--ink); margin: 5px 0; }
+  .btn { display: inline-block; background: var(--red); color: #fff; padding: 12px 26px; border-radius: 4px; font-size: 13px; font-weight: 700; letter-spacing: 1px; }
+  .btn:hover { background: #c11f1f; }
+  .btn.ghost { background: transparent; color: var(--ink); border: 2px solid var(--ink); }
+  .btn.ghost:hover { border-color: var(--red); color: var(--red); }
+
+  .hero { background: var(--sage-light); padding: 90px 0 70px; position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(20,24,29,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(20,24,29,.05) 1px, transparent 1px);
+    background-size: 56px 56px; }
+  .hero .wrap { position: relative; z-index: 1; }
+  .kicker { color: var(--red); font-weight: 700; letter-spacing: 3px; font-size: 13px; text-transform: uppercase; }
+  .hero h1 { font-size: clamp(36px, 5vw, 56px); line-height: 1.1; margin-top: 12px; }
+  .crumb { font-size: 13px; color: var(--ink-soft); margin-bottom: 18px; }
+  .crumb a:hover { color: var(--red); }
+
+  section { padding: 80px 0; }
+  h2 { font-size: 30px; margin-bottom: 18px; }
+  .lead { max-width: 680px; color: var(--ink-soft); font-size: 17px; }
+
+  .feature { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .feature img { width: 100%; height: 340px; object-fit: cover; display: block; box-shadow: 0 12px 28px rgba(20,24,29,.12); }
+  @media (max-width: 860px) { .feature { grid-template-columns: 1fr; } .feature img { height: 240px; } }
+
+  .portfolio { background: var(--grey); }
+  .companies { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 36px; }
+  .company { background: #fff; border: 1px solid var(--line); padding: 20px; font-weight: 600; font-size: 15px; }
+  .company span { display: block; font-weight: 400; font-size: 13px; color: var(--ink-soft); margin-top: 2px; }
+
+  .cta { background: var(--forest); color: #fff; text-align: center; }
+  .cta .kicker { color: var(--sage); }
+  .cta .lead { margin: 0 auto 34px; color: #cfd9cc; }
+
+  footer { background: #0d1014; color: #9aa3ad; padding: 48px 0 28px; font-size: 14px; }
+  .fgrid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+  footer h4 { color: #fff; font-size: 14px; letter-spacing: 1px; margin-bottom: 14px; }
+  footer li { list-style: none; margin-bottom: 8px; }
+  .legal { border-top: 1px solid #232a33; padding-top: 22px; font-size: 12px; }
+
+  @media (max-width: 860px) {
+    .menu-toggle { display: block; }
+    header nav { position: absolute; top: 76px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--line); display: none; box-shadow: 0 12px 24px rgba(20,24,29,.08); }
+    header nav.open { display: block; }
+    header nav ul { flex-direction: column; gap: 0; padding: 8px 32px 16px; }
+    header nav li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    header nav li:last-child { border-bottom: 0; }
+    .companies { grid-template-columns: 1fr 1fr; }
+    .fgrid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 520px) { .companies, .fgrid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo"><img src="Strand-Group-logo.png" alt="Strand Group"></a>
+    <button class="menu-toggle" onclick="document.querySelector('header nav').classList.toggle('open')" aria-label="Meny"><span></span><span></span><span></span></button>
+    <nav>
+      <ul>
+        <li><a href="om-oss.html">Om oss</a></li>
+        <li><a href="bygg.html">Bygg</a></li>
+        <li><a href="industri.html">Industri</a></li>
+        <li><a href="eiendom.html">Eiendom</a></li>
+        <li><a href="it.html">IT</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Hjem</a> / Industri</div>
+    <div class="kicker">Strand Group investerer i</div>
+    <h1>Industri</h1>
+  </div>
+</section>
+
+<section>
+  <div class="wrap feature">
+    <p class="lead">Strand Group fikk i juli 2021 muligheten til å kjøpe Troll Vindufabrikk AS. Selskapet har levert kvalitetsvinduer direkte fra fabrikk i over 30 år, og henter ut betydelige synergier som porteføljeselskap i konsernet vårt.</p>
+    <img src="vindufabrikk.jpg" alt="Troll Vindufabrikk">
+  </div>
+</section>
+
+<section class="portfolio">
+  <div class="wrap">
+    <div class="kicker">Porteføljeselskap</div>
+    <h2>Våre selskaper innen industri</h2>
+    <div class="companies">
+      <div class="company">Troll Vindufabrikk AS <span>100 %</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="kicker">Samarbeid</div>
+    <h2>Har du en nisjebedrift som kan passe inn?</h2>
+    <p class="lead">Tror du det vil være synergier ved et samarbeid med Strand Group? Vi hører gjerne fra deg.</p>
+    <a href="mailto:post@strandgroup.no" class="btn">TA KONTAKT</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h4>STRAND GROUP AS</h4><p>Verdiskapende samspill gjennom aktivt og ansvarlig eierskap.</p></div>
+      <div><h4>Kontakt</h4><ul><li>post@strandgroup.no</li><li>+47 334 50 500</li></ul></div>
+      <div><h4>Adresse</h4><ul><li>Breiliveien 49</li><li>3217 Sandefjord</li></ul></div>
+    </div>
+    <div class="legal">© 2026 Strand Group AS</div>
+  </div>
+</footer>
+
+<script
+  src="https://clientrelay.tech/widget/chatbot.js?v=1.5.576"
+  data-client="strand"
+  data-name="AI Assistent"
+  data-color="#007bc0"
+  data-greeting="Hei der! Hva kan jeg hjelpe deg med i dag?"
+  data-nudge="Hei! Jeg kan svare på spørsmål!"
+  data-nudge-delay="3000"
+></script>
+</body>
+</html>
