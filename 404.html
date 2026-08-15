@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ikke tilgjengelig — ClientRelay</title>
+    <title>Ikke tilgjengelig | ClientRelay</title>
     <meta name="robots" content="noindex">
     <style>
         :root{--primary:#0ea5e9;--accent:#06b6d4;--text:#e4e4e7;--text-muted:#b7c4d6;--border:rgba(125,211,252,0.16)}
@@ -26,7 +26,7 @@
     </main>
     <script>
         // GitHub Pages serves this for any unmatched path. A /hub/ path means a promo
-        // page that hasn't been published for this market — point the owner to settings.
+        // page that hasn't been published for this market; point the owner to settings.
         if (location.pathname.indexOf('/hub/') === 0 || location.pathname === '/hub') {
             document.documentElement.lang = 'nb';
             document.getElementById('t').textContent = 'Denne promo-siden er ikke aktivert';
@@ -34,7 +34,7 @@
             var cta = document.getElementById('cta');
             cta.textContent = 'Gå til hub-innstillinger →';
             cta.href = 'https://clientrelay.tech/app/';
-            document.title = 'Promo-side ikke aktivert — ClientRelay';
+            document.title = 'Promo-side ikke aktivert | ClientRelay';
         }
     </script>
 </body>
